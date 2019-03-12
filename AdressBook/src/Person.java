@@ -1,22 +1,23 @@
 
 public class Person {
 
-
 	private String name;
 	private String surname;
 	private String adress;
 	private String phone;
 
 
-	public Person(String name, String address, String surname, String phone) {
-		this.name = name;
+	public Person(String firstName, String surname, String address, String phone) {
+		
+		this.name = firstName;
 		this.surname = surname;
 		this.adress = address;
 		this.phone = phone;
 
 	}
 
-
+	
+	
 	public String getName() {
 		return name;
 	}
@@ -39,7 +40,8 @@ public class Person {
 @Override
 public String toString() {
 	
-	 return "\n\nName: " + getName() + "\nSurname: " + getSurname() +
+	 return"\n\nName: " + getName() + "\nSurname: " + getSurname() +
 			 "\nPhone: " +phone + "\nAddress: " + getAddress();
 	}
+
 }
